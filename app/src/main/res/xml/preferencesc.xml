@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Mi Categoria">
+
+    </PreferenceCategory>
+    <ListPreference
+        android:defaultValue="standard"
+        android:entries="@array/unidades_entries"
+        android:entryValues="@array/unidades_values"
+        android:title="Unidades"
+        android:key="unidades"
+        />
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="switch_preference_1"
+        android:title="Modo noche" />
+    <EditTextPreference
+        android:defaultValue=""
+        android:key="edit_text_preference_1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Introduce tu API" />
+    <ListPreference
+        android:defaultValue="es"
+        android:entries="@array/lenguage_entries"
+        android:entryValues="@array/lenguages_values"
+        android:title="Idioma"
+        android:key="idiomas"
+        />
+
+</PreferenceScreen>
